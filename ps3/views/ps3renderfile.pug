@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1 PS3: Simple Node App
+    if string1
+        h2 Problem #1 - Part B
+        p Pug renders the fixed string (from a JSON object with 1 key-value pair): <strong> #{string1} </strong>
+    if string2
+        h2 Problem #1 - Part C
+        p Pug renders a JSON object with two key/value pairs...
+        ul
+            li The first key is the original string: <strong> #{string2} </strong>
+            li The second is length of the original string: <strong> #{len} </strong>
