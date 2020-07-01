@@ -1,0 +1,8 @@
+<div *ngIf="mockData">
+  <div *ngFor="let business of mockData.businesses">
+    {{business.name}}
+  </div>
+</div>
+<button (click)="loadData()">
+  Load
+</button>
