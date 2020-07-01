@@ -1,0 +1,6 @@
+<form>
+  <input type="text" required="true" minlength="1" [(ngModel)]="cityName" name="city">
+  <button (click)="QueryData()">Query</button>
+</form>
+
+<app-query-display [data]="queryData"></app-query-display>
