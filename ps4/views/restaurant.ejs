@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= city %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1>Restaurants in <%= city %></h1>
+<p> Sorted by Rating (descending order) </p>
+<ul>
+    <% for (var i = 0; i < data.length; i++){ %>
+        <li>
+            <%= data[i].rating %>
+            &nbsp;&nbsp;
+            <%= data[i].name %> <!-- %= to eval expression-->
+            &nbsp;(<%= data[i].price %>)
+
+        </li>
+    <% } %>
+</ul>
+</body>
+</html>
